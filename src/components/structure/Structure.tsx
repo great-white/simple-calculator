@@ -16,18 +16,19 @@ export default function Structure() {
   };
 
   return (
-    <div>
+    <div className="parent">
       <div>
         <Display
           value=""
           handleOnValueChange={(event) => console.log("changed")}
         />
       </div>
-      <div className={"row"}>{renderRow(["AC", "", ",", "/"])}</div>
-      <div className={"row"}>{renderRow(["7", "8", "9", "*"])}</div>
-      <div className={"row"}>{renderRow(["4", "5", "6", "-"])}</div>
-      <div className={"row"}>{renderRow(["1", "2", "3", "+"])}</div>
-      <div className={"row"}>
+      <div className={"grid"}>{renderRow(["AC", "", "DEL", "/"])}</div>
+      <div className={"grid"}>{renderRow(["7", "8", "9", "*"])}</div>
+      <div className={"grid"}>{renderRow(["4", "5", "6", "-"])}</div>
+      <div className={"grid"}>{renderRow(["1", "2", "3", "+"])}</div>
+      <div className={"grid"}>{renderRow(["0", "00", ".", "="])}</div>
+      {/* <div className={"grid-last-row"}>
         <CalculatorButton
           id={"0"}
           key={"0"}
@@ -36,7 +37,7 @@ export default function Structure() {
           type={"rectangle"}
         />
         {renderRow([".", "="])}
-      </div>
+      </div> */}
     </div>
   );
 }

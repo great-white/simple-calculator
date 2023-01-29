@@ -1,5 +1,6 @@
 .rectangle {
     border-color: gray;
-    width: 160pt;
-    height: 40pt;
+    width: 90%;
+    height: 50px;
+    overflow: hidden;
 }
