@@ -1,0 +1,17 @@
+.div {
+    width: auto;
+}
+
+.square {
+    height: 40pt;
+    width: 25%;
+    border-color: skyblue;
+    padding: 10pt;
+}
+
+.rectangle {
+    height: 40pt;
+    width: 50%;
+    border-color: skyblue;
+    padding: 10pt;
+}
