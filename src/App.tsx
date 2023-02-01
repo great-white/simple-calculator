@@ -1,7 +1,5 @@
 import React from "react";
 import "./App.css";
-import CalculatorButton from "./components/button/CalculatorButton";
-import Display from "./components/display/Display";
 import Structure from "./components/structure/Structure";
 
 function App() {

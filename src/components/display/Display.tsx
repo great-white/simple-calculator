@@ -3,20 +3,14 @@ import "./Display.css";
 
 type DisplayProps = {
   value: string;
-  handleOnValueChange: React.ChangeEventHandler<HTMLInputElement>;
 };
 
 export default function Display(props: DisplayProps) {
-  const { value, handleOnValueChange } = props;
+  const { value } = props;
+
   return (
     <div>
-      <input
-        className={"rectangle"}
-        type={"text"}
-        disabled={true}
-        value={value}
-        onChange={handleOnValueChange}
-      />
+      <input readOnly className={"rectangle"} type={"text"} value={value} />
     </div>
   );
 }
